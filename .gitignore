@@ -1,0 +1,14 @@
+# See https://git-scm.com/docs/gitignore for details
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/

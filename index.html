@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Planting To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1 style="font-weight: bold; font-family: 'Montserrat', sans-serif; font-size: 3.2em; text-align: center; margin-bottom: 0; letter-spacing: -1px; color: #1b5e20; text-transform: uppercase; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">Treedo</h1>
+        <p style="font-family: 'Pacifico', cursive; font-size: 0.85em; text-align: center; margin-top: 4px; color: #66bb6a; letter-spacing: 0.8px; text-transform: lowercase;">Your Tree Planting To-Do List</p>
+        
+        <div class="date-selector">
+            <label for="selected-date">Select Date:</label>
+            <input type="date" id="selected-date">
+        </div>
+        
+        <div class="todo-container">
+            <div class="todo-input">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-btn">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+            <div id="tree-status"></div>
+        </div>
+        
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                <h2 id="current-month">Month Year</h2>
+                <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="calendar-grid" id="calendar-grid"></div>
+        </div>
+        
+        <div id="forest-message" class="hidden">
+            <div class="message-box">
+                <h2>🌲 Congratulations! 🌲</h2>
+                <p>You've planted a forest this month!</p>
+                <button id="close-message">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

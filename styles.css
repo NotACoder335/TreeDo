@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.date-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.date-selector input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.todo-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.todo-input {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.todo-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.todo-input button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-input button:hover {
+    background-color: #3e8e41;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f0f0f0;
+}
+
+#tree-status {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.calendar-container {
+    margin-top: 30px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #2e7d32;
+    padding: 5px 15px;
+}
+
+.calendar-header button:hover {
+    background-color: #f0f8f0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    min-height: 60px;
+    position: relative;
+}
+
+.calendar-day.empty {
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.calendar-day-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.calendar-day.tree-planted {
+    background-color: #e8f5e9;
+}
+
+.calendar-day.tree-planted::after {
+    content: "🌲";
+    font-size: 24px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#forest-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#forest-message.hidden {
+    display: none;
+}
+
+.message-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.message-box h2 {
+    color: #2e7d32;
+    margin-top: 0;
+}
+
+.message-box button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.message-box button:hover {
+    background-color: #1b5e20;
+}
+
+/* Add this to styles.css */
+.disabled-add-btn {
+    background-color: #cccccc !important;
+    cursor: not-allowed !important;
+}
+
+.date-warning {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
