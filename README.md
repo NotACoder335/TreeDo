@@ -3,7 +3,7 @@
 
 
 
-![Main application interface](assets\Main_UI.png)
+![Main application interface](TreeDo\assets\Main_UI.png)
 _The main interface of the Treedo app, showing the task list and calendar._
 
 Treedo is a simple and beautifully designed to-do list application that helps you stay organized while making a positive impact on the environment. Complete your daily tasks to plant virtual trees and watch your digital forest grow!
