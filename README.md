@@ -3,7 +3,7 @@
 
 
 
-![Main application interface](assets\Main_UI.png)
+![Main application interface](assets/Main_UI.png)
 _The main interface of the Treedo app, showing the task list and calendar._
 
 Treedo is a simple and beautifully designed to-do list application that helps you stay organized while making a positive impact on the environment. Complete your daily tasks to plant virtual trees and watch your digital forest grow!
@@ -13,11 +13,11 @@ Treedo is a simple and beautifully designed to-do list application that helps yo
 ## Key Features
 
 *   **🌳 Plant Trees as You Go:** For every day you complete all your tasks, you plant a new tree in your virtual forest.
-![Task performed](assets\tree_planted.png)
+![Task performed](assets/tree_planted.png)
 
 
 *   **🏆 Earn Achievements:** Unlock a special "Forest" achievement by planting a tree every single day of the month.
-![Forest achievement unlocked](assets\Celeb_1month.png)
+![Forest achievement unlocked](assets/Celeb_1month.png)
 
 
 *   **📅 Interactive Calendar:** Keep track of your progress with a visual calendar that shows your tree-planting streak.
